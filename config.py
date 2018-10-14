@@ -22,33 +22,33 @@ class Config:
     SIMPLEMDE_USE_CDN = True
 
 
-# class ProdConfig(Config):
-#     '''
-#     Production configuration child class
+class ProdConfig(Config):
+    '''
+    Production configuration child class
 
-#     Args:
-#         Config: The parent configuration class with General configuration settings
-#         '''
-#     pass
+    Args:
+        Config: The parent configuration class with General configuration settings
+        '''
+    pass
 
-# class TestConfig(Config):
-#     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:123@localhost/pitch_test'
+class TestConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:123@localhost/pitch_test'
 
-# class DevConfig(Config):
-#     '''
-#     Development configuration child class
+class DevConfig(Config):
+    '''
+    Development configuration child class
 
-#     Args:
-#         Config: The parent configuration class with General configuration settings
-#     '''
-#     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:123@localhost/pitch'
-#     DEBUG = True
+    Args:
+        Config: The parent configuration class with General configuration settings
+    '''
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:123@localhost/pitch'
+    DEBUG = True
 
-# config_options = {
-# 'development':DevConfig,
-# 'production':ProdConfig,
-# 'test':TestConfig
-# }
+config_options = {
+'development':DevConfig,
+'production':ProdConfig,
+'test':TestConfig
+}
    
 
 
