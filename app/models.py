@@ -57,17 +57,17 @@ class Comments(db.Model):
         return comments
 
 
-# class Pitch(db.Model):
-#     __tablename__='pitches'
-#     id=db.Column(db.Integer,primary_key=True)
-#     title=db.Column(db.String(255))
-#     description=db.Column(db.String)
-#     comments_id =db.Column(db.Integer,db.ForeignKey("comments.id"))
+class Pitch(db.Model):
+    __tablename__='pitches'
+    id=db.Column(db.Integer,primary_key=True)
+    title=db.Column(db.String(255))
+    description=db.Column(db.String)
+    comments_id =db.Column(db.Integer,db.ForeignKey("comments.id"))
 
 
-#     def save_pitch(self):
-#         db.session.add(self)
-#         db.session.commit()
+    def save_pitch(self):
+        db.session.add(self)
+        db.session.commit()
 
 #     @classmethod
 #     def get_pitches(cls):
