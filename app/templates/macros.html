@@ -1,4 +1,4 @@
-<!-- {% macro displayPitchList(pitches) %}
+{% macro displayPitchList(pitches) %}
 
 
     {% for pitch in pitches %}
@@ -11,13 +11,11 @@
             <div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 well pitch-well">
 
                 <li class="text-center">
-                            <h2>{{pitch.title}}</h2>
-                          <h3>{{pitch.description}}</h3>
-                          <h3 class="comment-create">
-                              <a href="{{url_for('main.new_comment')}}">
-                                  Add Comment
-                              </a>
-                          </h3>
+                    <h2>{{pitch.title}}</h2>
+                    <h3>{{pitch.description}}</h3>
+                    <h3 class="comment-create">
+                        <a href="{{url_for('main.new_comment')}}">Add Comment</a>                                                        
+                    </h3>
                 </li>
 
             </div>
@@ -30,24 +28,21 @@
 
     {% endfor %}
     {% endmacro %}
-    {% macro displayCommentList(comments) %}
+
+    <!-- {% macro displayCommentList(comments) %}
 
 
         {% for comment in comments %}
             <div class="row">
 
-                <div class="col-md-2 col-lg-2">
-
-                </div>
-
+                <div class="col-md-2 col-lg-2"></div>
+                
                 <div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 well comment-well">
 
                     <li>
 
                         <h4 class="comment-content">
-
                           {{comment.name}}
-
                         </h4>
 
                     </li>
