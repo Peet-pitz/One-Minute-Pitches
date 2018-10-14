@@ -69,10 +69,10 @@ class Pitch(db.Model):
         db.session.add(self)
         db.session.commit()
 
-#     @classmethod
-#     def get_pitches(cls):
-#         '''
-#         gets pitches from the database
-#         '''
-#         pitches=Pitch.query.all()
-#         return pitches
+    @classmethod
+    def get_pitches(cls):
+        '''
+        gets pitches from the database
+        '''
+        pitches=Pitch.query.all()
+        return pitches
