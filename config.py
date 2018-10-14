@@ -1,14 +1,14 @@
-# import os
+import os
 
-# class Config:
-#     '''
-#     General configuration parent class
-#     '''
+class Config:
+    '''
+    General configuration parent class
+    '''
     
-#     SECRET_KEY = os.environ.get('SECRET_KEY')
-#     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:123@localhost/pitch'
-#     UPLOADED_PHOTOS_DEST ='app/static/photos'
-#     SQLALCHEMY_TRACK_MODIFICATIONS=True 
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:123@localhost/pitch'
+    UPLOADED_PHOTOS_DEST ='app/static/photos'
+    SQLALCHEMY_TRACK_MODIFICATIONS=True 
 
     #  email configurations
     # MAIL_SERVER = 'smtp.googlemail.com'
