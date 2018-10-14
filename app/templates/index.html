@@ -1,0 +1,70 @@
+<!-- {% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+<h1>One minute pitch</h1>
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+{% block content %}
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Srisakdi');
+     h2{            display: block;
+            font-family: 'Srisakdi', 'Trebuchet MS';
+            color: #360a70cc;
+            font-size: 4.2em;
+            margin-bottom: 5px;
+            font-weight: bolder;
+            text-align: center;
+          }
+          ul {
+            font-family: 'Srisakdi',  Georgia;
+          }
+          body{
+            background-image: url('/static/css/photo/abstract-attractive-backdrop-988872.jpg')
+          }
+    </style>
+
+    <title> {{ title }} </title>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4 col-lg-4">
+                <h2 class="pitch-header">
+                     Pitches
+                </h2>
+            </div>
+
+            <div class="col-md-4 col-lg-4">
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <h2 class="pitch-create">
+                    <a href="/pitch/new">
+                        Create Pitch
+                    </a>
+                </h2>
+            </div>
+
+        </div>
+        <hr>
+
+        <ul class="list-unstyled">
+
+            {{ macro.displayPitchList(pitches) }}
+
+        </ul>
+
+        <ul class="list-unstyled">
+            {{ macro.displayCommentList(comments) }}
+        </ul>
+
+
+
+        <hr>
+
+
+  </div>
+
+
+{% endblock %} -->
