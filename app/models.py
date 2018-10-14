@@ -34,15 +34,15 @@ class User(UserMixin,db.Model):
 
          return f'User {self.username}'
 
-# class Comments(db.Model):
-#     __tablename__ ='comments'
-#     id = db.Column(db.Integer,primary_key= True)
-#     name=db.Column(db.String(255))
-#     pitches=db.relationship('Pitch',backref='comments',lazy='dynamic')
+class Comments(db.Model):
+    __tablename__ ='comments'
+    id = db.Column(db.Integer,primary_key= True)
+    name=db.Column(db.String(255))
+    pitches=db.relationship('Pitch',backref='comments',lazy='dynamic')
 
-#     def save_comment(self):
-#         db.session.add(self)
-#         db.session.commit()
+    def save_comment(self):
+        db.session.add(self)
+        db.session.commit()
 
 #     @classmethod
 #     def get_comments(cls):
