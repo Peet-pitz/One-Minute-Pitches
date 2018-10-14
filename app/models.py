@@ -16,23 +16,23 @@ class User(UserMixin,db.Model):
     email=db.Column(db.String(255),unique=True,index = True)
     pass_hash =db.Column(db.String(255))
 
-#     @property
-#     def password(self):
-#         raise AttributeError('You cannot read the password Attribute')
+    @property
+    def password(self):
+        raise AttributeError('You cannot read the password Attribute')
 
-#     @password.setter
-#     def password(self,password):
-#         self.pass_hash =generate_password_hash(password)
-#     def verify_password(self,password):
-#         return check_password_hash(self.pass_hash,password)
+    @password.setter
+    def password(self,password):
+        self.pass_hash =generate_password_hash(password)
+    def verify_password(self,password):
+        return check_password_hash(self.pass_hash,password)
 
-#     def save_user(self):
-#         db.session.add(self)
-#         db.session.commit()
+    def save_user(self):
+        db.session.add(self)
+        db.session.commit()
 
-#     def __repr__(self):
+    def __repr__(self):
 
-#          return f'User {self.username}'
+         return f'User {self.username}'
 
 # class Comments(db.Model):
 #     __tablename__ ='comments'
