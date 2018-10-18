@@ -1,3 +1,8 @@
 .pitch-header{
-    font-size: 20px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.pitch-create{
+    text-align: left;
 }

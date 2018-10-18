@@ -62,6 +62,8 @@ class Pitch(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     title=db.Column(db.String(255))
     description=db.Column(db.String)
+    like = db.Column(db.Integer)
+    dislike = db.Column(db.Integer)
     comments_id =db.Column(db.Integer,db.ForeignKey("comments.id"))
 
 
