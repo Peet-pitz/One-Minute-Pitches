@@ -26,7 +26,7 @@ peter njoroge
 None for now.
 ***
 # Link to Live website
-https://one-minute-pitches.herokuapp.com/***
+https://pitch007.herokuapp.com/***
 # Copyright and License Information
   This project is licensed under the terms of the **MIT** license.
    
