@@ -50,7 +50,7 @@ def new_comment():
     return render_template('new_comment.html', title=title, form=form,comments=comments)
 
 @main.route('/pitch_review/<int:id>',methods=['GET','POST'])
-@login_required
+
 def pitch_review(id):
     pitches=Pitch.query.get_or_404(id)
     if request.args.get("like"):
